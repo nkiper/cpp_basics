@@ -4,7 +4,7 @@
 /* 
    simpson.hpp
    
-   This header file declares the function for numerical integration using Simpson's rule.
+   This function implements numerical integration using Simpson's rule.
    The function takes a pointer to the integrand function, the start and end points of integration,
    and the number of intervals (N) to use for the approximation.
   
@@ -18,7 +18,7 @@
      end] using Simpson's rule.
 
    COMPLEXITY:
-   number of function calls: 3*N.
+   number of function calls: 2*N+1.
 */
 
 double simpson(double (*integrand)(double), double start, double end, unsigned N);
